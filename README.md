@@ -1,4 +1,4 @@
-# VOIP/Chat/ App Light and Dark Theme - Flutter UI
+# VOIP/Chat App Light and Dark Theme - Flutter UI
 
 <!-- ## [Watch it on YouTube](https://youtu.be/uiJF-ShOLyo) -->
 
