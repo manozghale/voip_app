@@ -3,6 +3,7 @@ import 'package:chat/constants.dart';
 import 'package:chat/screens/forgotPassword/forgot_password_screen.dart';
 import 'package:chat/screens/signIn/sign_in_screen.dart';
 import 'package:chat/screens/signUp/sign_up_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SigninOrSignupScreen extends StatelessWidget {
@@ -28,9 +29,13 @@ class SigninOrSignupScreen extends StatelessWidget {
                 text: "Sign In",
                 press: () => Navigator.push(
                   context,
-                  MaterialPageRoute(
+                  CupertinoPageRoute(
+                    fullscreenDialog: true,
                     builder: (context) => SignInScreen(),
                   ),
+                  // MaterialPageRoute(
+                  //   builder: (context) => SignInScreen(),
+                  // ),
                 ),
               ),
               SizedBox(

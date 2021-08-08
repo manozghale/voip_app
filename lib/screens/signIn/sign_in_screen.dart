@@ -9,6 +9,7 @@ class SignInScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Sign In"),
+        // backgroundColor: Colors.white10,
       ),
       body: Column(
         children: [
@@ -26,6 +27,34 @@ class SignInScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Forgot Password?",
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                        decoration: TextDecoration.underline,
+                        color: Theme.of(context)
+                            .textTheme
+                            .bodyText1
+                            .color
+                            .withOpacity(0.8)),
+                  ),
+                  // SizedBox(width: kDefaultPadding / 4),
+                ],
+              ),
+            ),
+          ),
+          Spacer(),
+          FittedBox(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ChatScreen(),
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Access Contacts",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyText1.copyWith(
                         decoration: TextDecoration.underline,

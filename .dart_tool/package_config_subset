@@ -26,6 +26,10 @@ collection
 2.12
 file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/
 file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib/
+contacts_service
+2.12
+file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/contacts_service-0.6.1/
+file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/contacts_service-0.6.1/lib/
 crypto
 2.12
 file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.0/
@@ -110,6 +114,10 @@ process
 2.12
 file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.1.0/
 file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.1.0/lib/
+quiver
+2.12
+file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.0.1/
+file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.0.1/lib/
 shared_preferences
 2.12
 file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.6/

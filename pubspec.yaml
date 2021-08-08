@@ -32,6 +32,7 @@ dependencies:
   google_fonts: ^1.1.2
   http: ^0.12.2
   shared_preferences: ^2.0.6
+  contacts_service: ^0.6.1
 
 dev_dependencies:
   flutter_test:

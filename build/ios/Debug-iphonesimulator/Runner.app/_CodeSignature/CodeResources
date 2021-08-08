@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		24Rxxxv0AkbKAiNSCK2vMgUxDec=
+		mh1S7g0aJ7JG+D4nX6d6cS3grHI=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		h9QQpfRjlGFB8oSIvWHpzkIj6OQ=
+		Jd7QX2NTAU3/JLxCTJ9v8Cqep3c=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES</key>
 		<data>
-		uf/fbuRvL+KaH6kulVMF7q5zJ+s=
+		zopzX4diG8+zqcgkrYMTy/+S0Xg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/Logo_dark_theme.svg</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		dN8eZzVc5HL1LXNoMugTweDNpY4=
+		47MMFD+O45LH08LtB919WDpvmSg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -280,6 +280,22 @@
 		<data>
 		GQZCpXMybn3RCh1MXi5WGSJg97k=
 		</data>
+		<key>Frameworks/contacts_service.framework/Info.plist</key>
+		<data>
+		1nOOaCaECIS9ucify7eR58jbESU=
+		</data>
+		<key>Frameworks/contacts_service.framework/_CodeSignature/CodeResources</key>
+		<data>
+		Cxp4Rl/kEcZ7piN+s26ITaRP8xo=
+		</data>
+		<key>Frameworks/contacts_service.framework/contacts_service</key>
+		<data>
+		MF8cqijwpR0iGO4TnFyml2waVvo=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		PjApZAlQATEApg9BXVvEOL2bBX8=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		rrAp64iPhUL40XQR7JlGMDIZaMA=
@@ -346,7 +362,7 @@
 		</data>
 		<key>Frameworks/path_provider.framework/path_provider</key>
 		<data>
-		ihkCm+J+myzjlP++XnUfNnftuT0=
+		b89mPdjtwpPQl3BZhOxvRio3KCs=
 		</data>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
 		<data>
@@ -358,11 +374,11 @@
 		</data>
 		<key>Frameworks/shared_preferences.framework/shared_preferences</key>
 		<data>
-		AviMI0LLmyF9XjGQwOUnicfhgks=
+		BCKIbTeB5QQHsyzvziYdozBCEhk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ek6FUp86gc4LKoCDzYTE3fb/vik=
+		/5Zb4SkrnbtHUFuiVlTeaP9O4mE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -661,11 +677,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			24Rxxxv0AkbKAiNSCK2vMgUxDec=
+			mh1S7g0aJ7JG+D4nX6d6cS3grHI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ObcpZRPTBpHprpNNUoBqD7eOMTAyNxRdrpbn8bQIz68=
+			B9kHlkJRw6qmEnCR4jUoxAvoqsZ20DVNCSwrOzb8ix4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -683,11 +699,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h9QQpfRjlGFB8oSIvWHpzkIj6OQ=
+			Jd7QX2NTAU3/JLxCTJ9v8Cqep3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			6x9OAnVaDQA9ohyuWbNBN1WAWdGJispJ+6t8SfXFEkw=
+			XmvSXaZqHCV4blSthOoLfZiaEMTzoeTuLZl/j74m+tY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -716,11 +732,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uf/fbuRvL+KaH6kulVMF7q5zJ+s=
+			zopzX4diG8+zqcgkrYMTy/+S0Xg=
 			</data>
 			<key>hash2</key>
 			<data>
-			CqaRg8+qRi39GUHSgp0mIX8fzAP3TCEYkUsLt39Uk3A=
+			r6pMRMIaMzLE+EXWQBTjzAu9BFHj1USJ3RfXdTBTN5E=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/Logo_dark_theme.svg</key>
@@ -870,11 +886,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dN8eZzVc5HL1LXNoMugTweDNpY4=
+			47MMFD+O45LH08LtB919WDpvmSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			YXEsTt/fUyi2dDtMad9dyksoXqdysdbNgKTzSZ8pF1w=
+			FyiITzVJrvmKCrIxzD/IUcgCR7ikiW4k2DZEWaqoBFw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -1130,6 +1146,50 @@
 			PxmoJrR/h+ORdYBLNxblG7h3l/244/4/McWAKWZ0TDY=
 			</data>
 		</dict>
+		<key>Frameworks/contacts_service.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1nOOaCaECIS9ucify7eR58jbESU=
+			</data>
+			<key>hash2</key>
+			<data>
+			EdVPxEVv1/+oKs+eFxo6Ir4TQCIJt4EwUM96X4vqvq4=
+			</data>
+		</dict>
+		<key>Frameworks/contacts_service.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cxp4Rl/kEcZ7piN+s26ITaRP8xo=
+			</data>
+			<key>hash2</key>
+			<data>
+			VYu/SuTQlFsXxlxIGpQpQ3s50EUKHawEqSY/DBSQX3U=
+			</data>
+		</dict>
+		<key>Frameworks/contacts_service.framework/contacts_service</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MF8cqijwpR0iGO4TnFyml2waVvo=
+			</data>
+			<key>hash2</key>
+			<data>
+			gWiNdSb9qbcfvflPQVv1uUVR3Q7YUfkako0ygsYlbxE=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PjApZAlQATEApg9BXVvEOL2bBX8=
+			</data>
+			<key>hash2</key>
+			<data>
+			BfBUuIGRZi6DYeeAlVecFLMlV5udeFgxV36ybBhvg1s=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>hash</key>
@@ -1310,11 +1370,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ihkCm+J+myzjlP++XnUfNnftuT0=
+			b89mPdjtwpPQl3BZhOxvRio3KCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			UuCDD8fzoEidnIKf0oOMW3HFs2ZiWWMTdC7kdskiQ/Q=
+			Sdu7j1i8IKv+qM9tRmQ6z8UwWFOhRQvJgMmcKzaYOBQ=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
@@ -1343,11 +1403,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AviMI0LLmyF9XjGQwOUnicfhgks=
+			BCKIbTeB5QQHsyzvziYdozBCEhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XOuZovHHZ8cxB1aRPEYXSqw/k68iMgQpqgzLCNVNqV8=
+			GzqNsvhRvu/iHPgLvNKd+bxDf+vepTRUMxZ2NK8dTeM=
 			</data>
 		</dict>
 	</dict>
