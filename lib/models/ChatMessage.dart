@@ -43,7 +43,8 @@ List demeChatMessages = [
     isSender: true,
   ),
   ChatMessage(
-    text: "Error happend",
+    text:
+        "I am very good.", //How about you buddy? This is so nice to meet you again",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.not_sent,
     isSender: true,

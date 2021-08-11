@@ -38,12 +38,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "contacts_service",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/contacts_service-0.6.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "crypto",
       "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.0",
       "packageUri": "lib/",
@@ -188,12 +182,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "quiver",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "shared_preferences",
       "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.6",
       "packageUri": "lib/",
@@ -302,7 +290,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-08-08T10:28:44.835704Z",
+  "generated": "2021-08-08T19:08:47.734939Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }
