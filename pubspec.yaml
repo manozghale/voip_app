@@ -33,6 +33,17 @@ dependencies:
   http: ^0.12.2
   shared_preferences: ^2.0.6
   # contacts_service: ^0.6.1
+  # firebase_core: "^0.7.0"
+  # firebase_auth: "^0.20.1"
+
+    # Draw SVG files
+  flutter_svg: ^0.21.0+1
+
+  # flutter form field validator that provides common validation options
+  form_field_validator: ^1.1.0
+
+  # This package contains pre-canned animations for commonly-desired effects
+  animations: ^2.0.0
 
 dev_dependencies:
   flutter_test:

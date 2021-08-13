@@ -1,5 +1,8 @@
 import 'package:chat/constants.dart';
+import 'package:chat/screens/calls/calls_hsitory_screen.dart';
 import 'package:chat/screens/chats/components/body.dart';
+import 'package:chat/screens/contacts/contacts_screen.dart';
+import 'package:chat/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -9,11 +12,18 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   int _selectedIndex = 0;
+  List<Widget> pageList = <Widget>[
+    Body(),
+    ContactsScreen(),
+    CallsHistoryScreen(),
+    ProfileScreen(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(),
+      body: pageList[_selectedIndex], //Body(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: kPrimaryColor,
@@ -33,6 +43,7 @@ class _ChatScreenState extends State<ChatScreen> {
       onTap: (value) {
         setState(() {
           _selectedIndex = value;
+          print(_selectedIndex);
         });
       },
       items: [
