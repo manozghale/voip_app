@@ -9,15 +9,15 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Profile"),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.settings_outlined),
-            onPressed: () {},
-          )
-        ],
-      ),
+      // appBar: AppBar(
+      //   title: Text("Profile"),
+      //   actions: [
+      //     IconButton(
+      //       icon: Icon(Icons.settings_outlined),
+      //       onPressed: () {},
+      //     )
+      //   ],
+      // ),
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
         child: Column(

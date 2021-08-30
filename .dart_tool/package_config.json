@@ -44,16 +44,28 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "contact_picker",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/contact_picker-0.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "contacts_service",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/contacts_service-0.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "crypto",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "fake_async",
@@ -63,13 +75,13 @@
     },
     {
       "name": "ffi",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "file",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -165,37 +177,37 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path_provider_linux",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path_provider_macos",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path_provider_windows",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "pedantic",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.10.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -207,19 +219,25 @@
     },
     {
       "name": "platform",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "process",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.1.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -249,7 +267,7 @@
     },
     {
       "name": "shared_preferences_web",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.1",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -272,6 +290,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "sqflite",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.0+4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sqflite_common",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "stack_trace",
       "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0",
       "packageUri": "lib/",
@@ -286,6 +316,12 @@
     {
       "name": "string_scanner",
       "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "synchronized",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -315,9 +351,9 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.0.0",
+      "rootUri": "file:///Users/vantagebit/Documents/sdk/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.2.5",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.13"
     },
     {
       "name": "xdg_directories",
@@ -338,7 +374,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-08-12T18:24:17.189594Z",
+  "generated": "2021-08-29T18:25:19.642937Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

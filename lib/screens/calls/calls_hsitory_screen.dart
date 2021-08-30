@@ -7,15 +7,15 @@ class CallsHistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Calls"),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
-          ),
-        ],
-      ),
+      // appBar: AppBar(
+      //   title: Text("Calls"),
+      //   actions: [
+      //     IconButton(
+      //       icon: Icon(Icons.search),
+      //       onPressed: () {},
+      //     ),
+      //   ],
+      // ),
       body: SafeArea(
         child: ListView(
           children: [

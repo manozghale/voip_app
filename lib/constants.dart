@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
-const kPrimaryColor = Color(0xFF00BF6D);
-const secondaryColor = Color(0xFFFE9901);
+const kPrimaryColor = Color(0xFF6450a5);
+const secondaryColor = Color(0xFFdb565b);
 const contentColorLightTheme = Color(0xFF1D1D35);
 const contentColorDarkTheme = Color(0xFFF5FCF9);
 const warninngColor = Color(0xFFF3BB1C);
@@ -35,3 +35,8 @@ const InputDecoration otpInputDecoration = InputDecoration(
 
 final List<String> demoContactsImage =
     List.generate(5, (index) => "assets/images/user_${index + 1}.png");
+
+const users = const {
+  'manoj@gmail.com': '12345',
+  'admin@gmail.com': '12345',
+};

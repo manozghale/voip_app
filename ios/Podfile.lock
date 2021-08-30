@@ -1,4 +1,8 @@
 PODS:
+  - contact_picker (0.0.1):
+    - Flutter
+  - contacts_service (0.2.2):
+    - Flutter
   - Flutter (1.0.0)
   - path_provider (0.0.1):
     - Flutter
@@ -6,11 +10,17 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - contact_picker (from `.symlinks/plugins/contact_picker/ios`)
+  - contacts_service (from `.symlinks/plugins/contacts_service/ios`)
   - Flutter (from `Flutter`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
 
 EXTERNAL SOURCES:
+  contact_picker:
+    :path: ".symlinks/plugins/contact_picker/ios"
+  contacts_service:
+    :path: ".symlinks/plugins/contacts_service/ios"
   Flutter:
     :path: Flutter
   path_provider:
@@ -19,6 +29,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/shared_preferences/ios"
 
 SPEC CHECKSUMS:
+  contact_picker: 57db5d8b410b52a0457d88f7b15de7d3307e8f16
+  contacts_service: 849e1f84281804c8bfbec1b4c3eedcb23c5d3eca
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
