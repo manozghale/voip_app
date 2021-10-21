@@ -12,25 +12,26 @@ class InfoDialogBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: () => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          title: Text(boxTitle),
-          content: Text(boxContent),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'Cancel'),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
+    return new AlertDialog(
+      title: const Text('Contact Admin'),
+      content: new Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text("Please contact admin for your password query"),
+        ],
       ),
-      // child: const Text('Show Dialog'),
+      actions: <Widget>[
+        new TextButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          child: Text(
+            'OK',
+            style: TextStyle(color: Theme.of(context).primaryColor),
+          ),
+        ),
+      ],
     );
   }
 }

@@ -29,23 +29,35 @@ dependencies:
   cupertino_icons: ^1.0.0
 
   # allows us to easily use any of the 977 fonts from fonts.google.com
-  google_fonts: ^1.1.2
-  http: ^0.12.2
-  shared_preferences: ^2.0.6
-  contacts_service: ^0.6.1
-  contact_picker: ^0.0.2
-  sqflite: ^2.0.0+4
-  # firebase_core: "^0.7.0"
-  # firebase_auth: "^0.20.1"
+  google_fonts: ^2.1.0
+  http:
+  shared_preferences:
+  sqflite:
+  firebase_core:
+  # firebase_auth:
+  # firebase_auth: ^0.15.3
+  # cloud_firestore: ^0.13.0+1
+  firebase_messaging:
+  flutter_local_notifications:
 
     # Draw SVG files
-  flutter_svg: ^0.21.0+1
+  flutter_svg:
 
   # flutter form field validator that provides common validation options
-  form_field_validator: ^1.1.0
+  form_field_validator:
 
   # This package contains pre-canned animations for commonly-desired effects
-  animations: ^2.0.0
+  animations:
+  # firebase_messaging: ^10.0.6
+
+  # firebase_auth: ^0.20.0+1
+  # firebase_core: ^0.7.0
+
+  # This package is for loading process
+  flutter_spinkit:
+
+  # This package is to show toast
+  fluttertoast:
 
 dev_dependencies:
   flutter_test:

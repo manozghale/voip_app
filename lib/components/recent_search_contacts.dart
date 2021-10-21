@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
-
 // class RecentSearchContacts extends StatelessWidget {
 //   const RecentSearchContacts({
 //     Key key,

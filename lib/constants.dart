@@ -25,6 +25,13 @@ final passwordValidator = MultiValidator(
   ],
 );
 
+final emailValidator = MultiValidator(
+  [
+    EmailValidator(errorText: invalidEmail),
+    RequiredValidator(errorText: requiredField)
+  ],
+);
+
 const InputDecoration otpInputDecoration = InputDecoration(
   filled: false,
   border: UnderlineInputBorder(),
@@ -36,7 +43,8 @@ const InputDecoration otpInputDecoration = InputDecoration(
 final List<String> demoContactsImage =
     List.generate(5, (index) => "assets/images/user_${index + 1}.png");
 
-const users = const {
-  'manoj@gmail.com': '12345',
-  'admin@gmail.com': '12345',
-};
+// user info shared instance
+const apiKey = 'apiKey';
+const userId = 'userID';
+const sessionToken = 'sessionToken';
+const emailAddress = 'emailAddress';

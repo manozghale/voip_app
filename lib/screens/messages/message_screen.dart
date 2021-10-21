@@ -1,14 +1,55 @@
-import 'package:chat/constants.dart';
+import 'package:chat/models/Chat.dart';
+import 'package:chat/models/MessageThread.dart';
+import 'package:chat/services/user_defaults.dart';
 import 'package:flutter/material.dart';
 
 import 'components/body.dart';
 
-class MessagesScreen extends StatelessWidget {
+class MessageScreen extends StatefulWidget {
+  const MessageScreen({
+    Key key,
+    this.tn,
+    this.thread,
+  }) : super(key: key);
+
+  final String tn;
+  final MessageDatum thread;
+  @override
+  _MessageScreenState createState() => _MessageScreenState();
+}
+
+class _MessageScreenState extends State<MessageScreen> {
+  List<ThreadDatum> messages = [];
+  String updatedMessage = '';
+  @override
+  void initState() {
+    super.initState();
+    getAllMessage();
+  }
+
+  getAllMessage() async {
+    List<ThreadDatum> _messages = await UserDefaults.getMessageThread(
+        widget.tn, widget.thread.contactNumber);
+    setState(() {
+      messages = _messages;
+    });
+  }
+
+  String get userName {
+    return widget.thread.contactName.isEmpty
+        ? widget.thread.contactNumber
+        : widget.thread.contactName;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(),
+      body: Body(
+        tn: widget.tn,
+        messageDatum: widget.thread,
+        threadDatum: messages,
+      ),
     );
   }
 
@@ -18,21 +59,21 @@ class MessagesScreen extends StatelessWidget {
       title: Row(
         children: [
           BackButton(),
-          CircleAvatar(
-            backgroundImage: AssetImage("assets/images/user_2.png"),
-          ),
-          SizedBox(width: kDefaultPadding * 0.75),
+          // CircleAvatar(
+          //   backgroundImage: AssetImage("assets/images/user_2.png"),
+          // ),
+          // SizedBox(width: kDefaultPadding * 0.75),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Kristin Watson",
+                userName,
                 style: TextStyle(fontSize: 16),
               ),
-              Text(
-                "Active 3m ago",
-                style: TextStyle(fontSize: 12),
-              )
+              // Text(
+              //   "Active 3m ago",
+              //   style: TextStyle(fontSize: 12),
+              // )
             ],
           )
         ],

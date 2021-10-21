@@ -1,11 +1,10 @@
 import 'package:chat/constants.dart';
-// import 'package:chat/screens/calls/calls_hsitory_screen.dart';
-import 'package:chat/screens/chats/components/body.dart';
-import 'package:chat/screens/contacts/contact_picker_screen.dart';
 import 'package:chat/screens/contacts/contacts_screen.dart';
+import 'package:chat/screens/contacts/user_contact_list_screen.dart';
 import 'package:chat/screens/profile/profile_screen.dart';
-import 'package:contact_picker/contact_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class ChatScreen extends StatefulWidget {
   @override
@@ -15,35 +14,34 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   int _selectedIndex = 0;
   List<Widget> pageList = <Widget>[
-    Body(),
+    // ChatListScreen(),
     ContactsScrenState(),
     // CallsHistoryScreen(),
     ProfileScreen(),
   ];
 
-  List<Widget> barButtonActionList = <Widget>[
-    ContactPickerScreen(),
-    ContactPickerScreen(),
-    // ContactPickerScreen(),
-    ContactPickerScreen(),
-  ];
+  // List<Widget> barButtonActionList = <Widget>[
+  //   // ContactPickerScreen(),
+  //   ContactPickerScreen(),
+  //   // ContactPickerScreen(),
+  //   ContactPickerScreen(),
+  // ];
 
   List<String> appTitle = <String>[
-    "Message",
-    "Contacts",
+    // "Message",
+    "My Numbers",
     // "Calls",
     "Profile",
   ];
 
   List<Icon> iconList = <Icon>[
+    // Icon(Icons.add),
     Icon(Icons.add),
-    Icon(Icons.search),
     // Icon(Icons.search),
     Icon(Icons.settings),
   ];
 
   String number, name;
-  final ContactPicker contactPicker = new ContactPicker();
 
   @override
   void initState() {
@@ -58,10 +56,17 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: appBar(
           appTitle[_selectedIndex],
           iconList[
-              _selectedIndex]), //buildAppBar(), //onpressed action to be implemented
+              _selectedIndex]), //buildAppBar(), //iconlist is disabled in appBar
       body: pageList[_selectedIndex], //Body(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                UserContactList(), //AddNewChatScreen(), //MessageScreen(), //
+            // fullscreenDialog: true,
+          ),
+        ),
         backgroundColor: kPrimaryColor,
         child: Icon(
           Icons.person_add_alt_1,
@@ -83,14 +88,15 @@ class _ChatScreenState extends State<ChatScreen> {
         });
       },
       items: [
-        BottomNavigationBarItem(icon: Icon(Icons.message), label: "Messages"),
-        BottomNavigationBarItem(icon: Icon(Icons.people), label: "People"),
+        // BottomNavigationBarItem(icon: Icon(Icons.message), label: "Messages"),
+        BottomNavigationBarItem(icon: Icon(Icons.message), label: "Message"),
         // BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
         BottomNavigationBarItem(
-          icon: CircleAvatar(
-            radius: 14,
-            backgroundImage: AssetImage("assets/images/user_2.png"),
-          ),
+          icon: Icon(Icons.person),
+          // CircleAvatar(
+          //   radius: 14,
+          //   backgroundImage: AssetImage("assets/images/user_2.png"),
+          // ),
           label: "Profile",
         ),
       ],
@@ -101,58 +107,23 @@ class _ChatScreenState extends State<ChatScreen> {
     return AppBar(
       automaticallyImplyLeading: false,
       title: Text(text),
-      actions: [
-        IconButton(
-          onPressed: () async {
-            Contact contact = await contactPicker.selectContact();
-            if (contact != null) {
-              number = contact.phoneNumber.number;
-              name = contact.fullName;
-              print("contacts:");
-              print(contact);
-              setState(() {
-                print("contact selected");
-                print(contact.toString());
-                // contact == null ? 'No contact selected' : contact.toString(),
-              });
-            }
-            // switch (_selectedIndex) {
-            //   case 0:
-            //     Contact contact = await contactPicker.selectContact();
-            //     if (contact != null) {
-            //       number = contact.phoneNumber.number;
-            //       name = contact.fullName;
-            //       print("contacts:");
-            //       print(contact);
-            //       setState(() {
-            //         print("contact selected");
-            //         print(contact.toString());
-            //         // contact == null ? 'No contact selected' : contact.toString(),
-            //       });
-            //     }
-            //     break;
-            //   default:
-            //     // () => Navigator.push(
-            //     //       context,
-            //     //       MaterialPageRoute(
-            //     //         builder: (context) =>
-            //     //             barButtonActionList[_selectedIndex],
-            //     //         fullscreenDialog: true,
-            //     //       ),
-            //     //     );
-            //     break;
-            // }
-          },
-          // onPressed: () => Navigator.push(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) => barButtonActionList[_selectedIndex],
-          //     fullscreenDialog: true,
-          //   ),
-          // ),
-          icon: iconButton,
-        ),
-      ],
+      // uncomment if needed -> shows actionable icon in right side of nav bar
+
+      // actions: [
+      //   IconButton(
+      //     onPressed: () async {
+      //       Contact contact = await contactPicker.selectContact();
+      //       if (contact != null) {
+      //         number = contact.phoneNumber.number;
+      //         name = contact.fullName;
+      //         setState(() {
+      //           // contact == null ? 'No contact selected' : contact.toString(),
+      //         });
+      //       }
+      //     },
+      //     icon: iconButton,
+      //   ),
+      // ],
     );
   }
 

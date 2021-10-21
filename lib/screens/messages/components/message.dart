@@ -1,10 +1,9 @@
 import 'package:chat/models/ChatMessage.dart';
+import 'package:chat/models/MessageThread.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
-import 'audio_message.dart';
 import 'text_message.dart';
-import 'video_message.dart';
 
 class Message extends StatelessWidget {
   const Message({
@@ -12,27 +11,37 @@ class Message extends StatelessWidget {
     @required this.message,
   }) : super(key: key);
 
-  final ChatMessage message;
+  // final ChatMessage message;
+  final ThreadDatum message;
+
+  bool get isSender {
+    if (message.messageType == 'outbound') {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    Widget messageContaint(ChatMessage message) {
-      switch (message.messageType) {
-        case ChatMessageType.text:
-          return TextMessage(message: message);
-          break;
-        default:
-          return SizedBox();
-      }
-    }
+    // Widget messageContaint(ChatMessage message) {
+    //   switch (message.messageType) {
+    //     case ChatMessageType.text:
+    //       return TextMessage(message: message);
+    //       break;
+    //     default:
+    //       // break;
+    //       return SizedBox();
+    //   }
+    // }
 
     return Padding(
       padding: const EdgeInsets.only(top: kDefaultPadding),
       child: Row(
         mainAxisAlignment:
-            message.isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
+            isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
         children: [
-          if (!message.isSender) ...[
+          if (!isSender) ...[
             CircleAvatar(
               radius: 12,
               backgroundImage: AssetImage("assets/images/user_2.png"),
@@ -42,8 +51,9 @@ class Message extends StatelessWidget {
           // TextMessage(
           //   message: message,
           // ),
-          messageContaint(message),
-          if (message.isSender) MessageStatusDot(status: message.messageStatus)
+          // messageContaint(message),
+          TextMessage(message: message),
+          // if (message.isSender) MessageStatusDot(status: message.messageStatus)
         ],
       ),
     );

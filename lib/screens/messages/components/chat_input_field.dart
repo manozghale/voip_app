@@ -1,32 +1,65 @@
-import 'package:chat/screens/messages/components/message.dart';
+import 'package:chat/models/Chat.dart';
+import 'package:chat/models/MessageThread.dart';
+import 'package:chat/models/SendSMS.dart';
+import 'package:chat/screens/messages/components/body.dart';
+import 'package:chat/services/user_defaults.dart';
 import 'package:flutter/material.dart';
-import 'package:chat/models/ChatMessage.dart';
 import '../../../constants.dart';
 
-class ChatInputField extends StatelessWidget {
-  // const ChatInputField({
-  //   Key key,
-  // }) : super(key: key);
+class ChatInputField extends StatefulWidget {
+  const ChatInputField(
+      {Key key,
+      this.tn,
+      this.messageThread,
+      this.messageDatum,
+      this.messageSent,
+      @required this.press})
+      : super(key: key);
 
+  final List<ThreadDatum> messageThread;
+  final MessageDatum messageDatum;
+  final String tn;
+  final Function messageSent;
+  final VoidCallback press;
+
+  @override
+  _ChatInputFieldState createState() => _ChatInputFieldState();
+}
+
+class _ChatInputFieldState extends State<ChatInputField> {
   TextEditingController myController = TextEditingController();
-  void sendMessage() {
+  SendSMSData smsData = SendSMSData();
+
+  void sendMessage() async {
     // send message action here
     print('send button tapped ' + myController.text);
+    print('tn: ${widget.tn}');
+    print('number: ${widget.messageDatum.contactNumber}');
     if (myController.text.isNotEmpty) {
-      demeChatMessages.add(ChatMessage(
-        messageType: ChatMessageType.text,
-        messageStatus: MessageStatus.not_view,
-        isSender: true,
-      ));
+      SendSMSData _smsData = await UserDefaults.sendSMS(
+          widget.tn, widget.messageDatum.contactNumber, myController.text);
+      if (_smsData != null) {
+        if (_smsData.status) {
+          setState(() {
+            smsData = _smsData;
+            myController.clear();
+            widget.press();
+          });
+        }
+      }
 
-      print(demeChatMessages.toString());
-      for (var item in demeChatMessages) {}
+      // demeChatMessages.add(ChatMessage(
+      //   messageType: ChatMessageType.text,
+      //   messageStatus: MessageStatus.not_view,
+      //   isSender: true,
+      // ));
+
+      // print(demeChatMessages.toString());
 
       // setState(() {
 
       // });
     }
-    myController.clear();
   }
 
   @override
@@ -82,7 +115,8 @@ class ChatInputField extends StatelessWidget {
                       ),
                     ),
                     IconButton(
-                      onPressed: () {
+                      // onPressed: widget.press,
+                      onPressed: () async {
                         sendMessage();
                       },
                       icon: Icon(

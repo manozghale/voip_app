@@ -1,3 +1,67 @@
+// To parse this JSON data, do
+//
+//     final welcome = welcomeFromJson(jsonString);
+
+import 'dart:convert';
+
+MessageList welcomeFromJson(String str) =>
+    MessageList.fromJson(json.decode(str));
+
+String welcomeToJson(MessageList data) => json.encode(data.toJson());
+
+class MessageList {
+  MessageList({
+    this.data,
+    this.error,
+  });
+
+  List<MessageDatum> data;
+  bool error;
+
+  factory MessageList.fromJson(Map<String, dynamic> json) => MessageList(
+        data: List<MessageDatum>.from(
+            json["data"].map((x) => MessageDatum.fromJson(x))),
+        error: json["error"],
+      );
+
+  Map<String, dynamic> toJson() => {
+        "data": List<dynamic>.from(data.map((x) => x.toJson())),
+        "error": error,
+      };
+}
+
+class MessageDatum {
+  MessageDatum({
+    this.contactNumber,
+    this.contactName,
+    this.messageSeen,
+    this.recentMessage,
+    this.time,
+  });
+
+  String contactNumber;
+  String contactName;
+  String messageSeen;
+  String recentMessage;
+  String time;
+
+  factory MessageDatum.fromJson(Map<String, dynamic> json) => MessageDatum(
+        contactNumber: json["contactNumber"],
+        contactName: json["contactName"],
+        messageSeen: json["message_seen"],
+        recentMessage: json["recentMessage"],
+        time: json["time"],
+      );
+
+  Map<String, dynamic> toJson() => {
+        "contactNumber": contactNumber,
+        "contactName": contactName,
+        "message_seen": messageSeen,
+        "recentMessage": recentMessage,
+        "time": time,
+      };
+}
+
 class Chat {
   final String name, lastMessage, image, time;
   final bool isActive;
